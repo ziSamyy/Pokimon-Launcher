@@ -1,37 +1,37 @@
 {
-    "name": "Selvania-Launcher",
-    "preductname": "Selvania Launcher",
-    "version": "1.2.4",
-    "description": "Launcher Mincraft custom (crack, premium)",
-    "main": "src/app.js",
-    "author": "Luuxis",
-    "url": "http://craftdium.ml/launcherSelvania",
-    "engines": {
-        "node": "^18.x.x"
-    },
-    "scripts": {
-        "start": "cross-env-shell NODE_ENV=dev electron .",
-        "build": "node build.js --obf=true",
-        "dev": "nodemon --exec npm start"
-    },
-    "license": "CC0",
-    "nodemonConfig": {
-        "ext": "js,html,css"
-    },
-    "dependencies": {
-        "electron-updater": "^5.0.1",
-        "minecraft-java-core": "^3.1.1",
-        "node-fetch": "^2.6.7"
-    },
-    "devDependencies": {
-        "cross-env": "^7.0.3",
-        "electron": "^20.0.0",
-        "electron-builder": "^23.0.3",
-        "javascript-obfuscator": "^4.0.2",
-        "nodemon": "^2.0.16"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/luuxis/Selvania-Launcher.git"
-    }
+	"name": "sakura",
+	"preductname": "Sakura Launcher",
+	"version": "1.0.0",
+	"description": "Launcher creado con ♥ para la serie Sakura",
+	"main": "src/app.js",
+	"author": "Luuxis, lex05",
+	"url": "http://launcher.sakuralivemc.com",
+	"engines": {
+		"node": "^18.x.x"
+	},
+	"scripts": {
+		"start": "cross-env-shell NODE_ENV=dev electron .",
+		"build": "node build.js --obf=true",
+		"dev": "nodemon --exec npm start"
+	},
+	"license": "CC0",
+	"nodemonConfig": {
+		"ext": "js,html,css"
+	},
+	"dependencies": {
+		"electron-updater": "^5.0.1",
+		"minecraft-java-core": "^3.4.2",
+		"node-fetch": "^2.6.7"
+	},
+	"devDependencies": {
+		"cross-env": "^7.0.3",
+		"electron": "^20.0.0",
+		"electron-builder": "^23.0.3",
+		"javascript-obfuscator": "^4.0.2",
+		"nodemon": "^2.0.16"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Dev4lexG/Sakura-Launcher.git"
+	}
 }

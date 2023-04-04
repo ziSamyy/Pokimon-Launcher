@@ -12,6 +12,7 @@ body {
     padding: 0;
     user-select: none;
     background: linear-gradient(#00000066, #00000066), url("../images/background/light.jpg") black no-repeat center center scroll;
+    background-size: 105%;
 }
 
 img {
@@ -21,7 +22,8 @@ img {
 
 .dragbar {
     position: fixed;
-    background: #00000080;
+    background: #e0a3cc42;
+    backdrop-filter: blur(4px);
     top: 0px;
     left: 0px;
     width: 100%;
@@ -32,7 +34,6 @@ img {
 }
 
 .frame {
-    background: transparent;
     position: fixed;
     display: table;
     top: 0px;
@@ -40,6 +41,7 @@ img {
     z-index: 11;
     -webkit-app-region: no-drag;
     display: none;
+    border-bottom-left-radius: 10px;
 }
 
 .hide {
@@ -54,16 +56,24 @@ img {
     transition: color .2s, background-color .2s;
     color: black;
     cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .icon-close:hover {
     background: #e21212;
 }
 
-.icon-minimize:hover,
-.icon-restore-down:hover,
+.icon-minimize:hover {
+    background: #e0bb56;
+}
+
+.icon-restore-down:hover {
+    background-color: #561a8b;
+}
+
 .icon-maximize:hover {
-    background-color: #0000009d;
+    background: #568c21;
 }
 
 .icon-close:before,
