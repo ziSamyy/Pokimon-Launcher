@@ -126,6 +126,7 @@ class Home {
 						: `.${this.config.dataDirectory}`
 				}`,
 				version: this.config.game_version,
+				instance: 'sakura',
 				detached: launcherSettings.launcher.close === 'close-all' ? false : true,
 				downloadFileMultiple: 30,
 
@@ -143,7 +144,7 @@ class Home {
 				JVM_ARGS: [
 					`-javaagent:${path.join(
 						process.cwd(),
-						'src',
+						'resources',
 						'libraries',
 						'java',
 						'sakuraAuth.jar'
