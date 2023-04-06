@@ -22,9 +22,28 @@ class Splash {
 	async startAnimation() {
 		let splashes = [
 			{ message: '🌸 Sakura ...', author: 'lex05' },
-			{ message: 'Launcher creado con ❤', author: 'lex05' },
+			{ message: 'Launcher creado con 🧡', author: 'lex05' },
 			{ message: 'Disfruta ;)', author: 'lex05' },
 			{ message: 'Bienvenid@s', author: 'lemon' },
+			{ message: 'recuerda tomar awita con frecuencia', author: 'miki' },
+			{ message: 'No olvides decirle a tu mamá que la quieres mucho', author: 'miki' },
+			{ message: 'Recuerda alimentarte', author: 'lemon' },
+			{ message: 'Esta bien no estar bien a veces', author: 'miki' },
+			{ message: 'Puedes llorar si asi lo deseas', author: 'lemon' },
+			{
+				message:
+					'Aprender a gestionar correctamente tus emociones es tu responsabilidad, estaras bien',
+				author: 'miki',
+			},
+			{ message: 'La vida tiene el color que tu deseas pintar', author: 'lemon' },
+			{
+				message: 'Recuerda que no puedes controlar tus emociones',
+				author: 'miki',
+			},
+			{
+				message: 'Recuerda no guardar tus emociones bajo llave',
+				author: 'miki',
+			},
 		]
 		let splash = splashes[Math.floor(Math.random() * splashes.length)]
 		this.splashMessage.textContent = splash.message

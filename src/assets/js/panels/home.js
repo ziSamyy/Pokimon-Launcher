@@ -144,7 +144,7 @@ class Home {
 				JVM_ARGS: [
 					`-javaagent:${path.join(
 						process.cwd(),
-						'resources',
+						process.env.NODE_ENV === 'dev' ? 'src' : 'resources',
 						'libraries',
 						'java',
 						'sakuraAuth.jar'
@@ -189,6 +189,10 @@ class Home {
 			})
 
 			launch.on('estimated', (time) => {
+				if (isNaN(time)) {
+					launch.Launch(opts)
+					return
+				}
 				let hours = Math.floor(time / 3600)
 				let minutes = Math.floor((time - hours * 3600) / 60)
 				let seconds = Math.floor(time - hours * 3600 - minutes * 60)
@@ -196,6 +200,7 @@ class Home {
 			})
 
 			launch.on('speed', (speed) => {
+				if (speed == 0) return
 				console.log(`${(speed / 1067008).toFixed(2)} Mb/s`)
 			})
 
@@ -227,6 +232,8 @@ class Home {
 
 			launch.on('error', (err) => {
 				console.log(err)
+				console.log('trying new Launch...')
+				launch.Launch(opts)
 			})
 		})
 	}
