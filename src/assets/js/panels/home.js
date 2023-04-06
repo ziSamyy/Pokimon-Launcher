@@ -87,7 +87,7 @@ class Home {
                         <p>No se pudo obtener información.</p>
                     </div>
                 </div>`
-			news.appendChild(blockNews)
+			// news.appendChild(blockNews)
 		}
 	}
 
@@ -190,7 +190,9 @@ class Home {
 
 			launch.on('estimated', (time) => {
 				if (isNaN(time)) {
-					launch.Launch(opts)
+					document.querySelector('.text-download').innerHTML =
+						'Error inesperado.\nReinicia el launcher'
+					document.querySelector('.text-download').style.margin = '-35%'
 					return
 				}
 				let hours = Math.floor(time / 3600)

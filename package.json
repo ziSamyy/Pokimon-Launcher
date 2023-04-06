@@ -1,7 +1,7 @@
 {
 	"name": "sakura",
 	"preductname": "Sakura Launcher",
-	"version": "1.1.2",
+	"version": "1.1.3",
 	"description": "Launcher creado con 🧡 para la serie Sakura",
 	"main": "src/app.js",
 	"author": "Luuxis, lex05",
