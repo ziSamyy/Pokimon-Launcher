@@ -71,11 +71,9 @@ class Login {
 				client_token: account_connect.client_token,
 				uuid: account_connect.uuid,
 				name: account_connect.name,
+				refresh_token: account_connect.refresh_token,
 				user_properties: account_connect.user_properties,
-				meta: {
-					type: account_connect.meta.type,
-					offline: account_connect.meta.offline,
-				},
+				meta: account_connect.meta,
 			}
 
 			this.database.add(account, 'accounts')
