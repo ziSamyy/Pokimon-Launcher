@@ -1,7 +1,7 @@
 {
 	"name": "mainkra",
 	"preductname": "Mainkra Launcher",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Zzzz",
 	"main": "src/app.js",
 	"author": "ziSamyy",
