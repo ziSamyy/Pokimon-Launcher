@@ -5,7 +5,7 @@
 	height: 70px;
 	border-top-left-radius: 40px;
 	border-top-right-radius: 40px;
-	background: #e0a3cc42;
+	background: #ff2727a2;
 	backdrop-filter: blur(4px);
 	display: flex;
 }
@@ -65,14 +65,14 @@
 	height: 37px;
 	border-radius: 20px;
 	border: none;
-	background: #ff96c6;
+	background: #ff0000;
 	font: normal normal bold 20px/25px 'Delius Swash Caps';
 	color: #121212;
 	margin: 15px 0;
 }
 
 .play-btn:hover {
-	background: #ffc0db;
+	background: #ff5d5d;
 }
 
 .download-content {
@@ -102,7 +102,7 @@
 }
 
 .progress-bar::-webkit-progress-value {
-	background-color: #e0a3cc;
+	background-color: #ff5d5d;
 	border-radius: 10px;
 }
 
@@ -143,7 +143,7 @@
 	left: 0px;
 	width: 100%;
 	height: 87px;
-	background-color: #e0a3cca1;
+	background-color: #89e7ffa1;
 	border-radius: 10px 10px 0px 0px;
 	transition: color 0.2s, filter 0.2s;
 }
@@ -200,7 +200,7 @@
 .bbWrapper {
 	position: relative;
 	padding: 20px;
-	background-color: #e0a3cc42;
+	background-color: #93d7ff42;
 	font-family: 'Delius Swash Caps';
 	font-size: 13px !important;
 	color: #e1e1e1;
@@ -230,7 +230,7 @@
 	position: relative;
 	width: 100%;
 	height: 75px;
-	background-color: #e0a3ccc2;
+	background-color: rgba(139, 222, 255, 0.761);
 	border-radius: 10px;
 	transition: opacity 1s;
 }

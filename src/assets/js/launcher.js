@@ -134,7 +134,7 @@ class Launcher {
 					}
 
 					let refresh = await Mojang.refresh(account)
-					console.log(`Initializing Mainkra account ${account.name}...`)
+					console.log(`Initializing Pokimon account ${account.name}...`)
 					let refresh_accounts
 
 					if (refresh.error) {

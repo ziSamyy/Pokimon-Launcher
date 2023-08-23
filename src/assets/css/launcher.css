@@ -12,7 +12,7 @@ body {
 	padding: 0;
 	user-select: none;
 	background: linear-gradient(#00000066, #00000066),
-		url('../images/background/light.jpg') black no-repeat center center scroll;
+		url('../images/background/pokimon.jpg') black no-repeat center center scroll;
 	background-size: 105%;
 }
 
@@ -23,7 +23,7 @@ img {
 
 .dragbar {
 	position: fixed;
-	background: #e0a3cc42;
+	background: #ff2727a2;
 	backdrop-filter: blur(4px);
 	top: 0px;
 	left: 0px;

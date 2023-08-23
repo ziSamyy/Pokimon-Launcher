@@ -126,7 +126,7 @@ class Home {
 						: `.${this.config.dataDirectory}`
 				}`,
 				version: this.config.game_version,
-				instance: 'mainkra',
+				instance: 'pokimon',
 				detached: launcherSettings.launcher.close === 'close-all' ? false : true,
 				downloadFileMultiple: 30,
 
