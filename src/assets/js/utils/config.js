@@ -18,6 +18,7 @@ class Config {
 					return resolve(config.json())
 				})
 				.catch((error) => {
+					document.querySelector('.preload-title').innerHTML = 'Fallo de conexión'
 					return reject(error)
 				})
 		})
