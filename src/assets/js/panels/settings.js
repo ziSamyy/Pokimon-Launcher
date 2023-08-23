@@ -31,21 +31,21 @@ class Settings {
 			let uuid = e.target.id
 			let selectedaccount = await this.database.get('1234', 'accounts-selected')
 
-			if (e.path[0].classList.contains('account')) {
+			if (e.target.classList.contains('account')) {
 				accountSelect(uuid)
 				this.database.update({ uuid: '1234', selected: uuid }, 'accounts-selected')
 			}
 
 			if (e.target.classList.contains('account-delete')) {
-				this.database.delete(e.path[1].id, 'accounts')
+				this.database.delete(e.target.parentElement.id, 'accounts')
 
-				document.querySelector('.accounts').removeChild(e.path[1])
+				document.querySelector('.accounts').removeChild(e.target.parentElement)
 				if (!document.querySelector('.accounts').children.length) {
 					changePanel('login')
 					return
 				}
 
-				if (e.path[1].id === selectedaccount.value.selected) {
+				if (uuid === selectedaccount.value.selected) {
 					let uuid = (await this.database.getAll('accounts'))[0].value.uuid
 					this.database.update(
 						{
@@ -76,7 +76,7 @@ class Settings {
 		let sliderDiv = document.querySelector('.memory-slider')
 		sliderDiv.setAttribute('max', Math.trunc((80 * totalMem) / 100))
 
-		let ram = ramDatabase ? ramDatabase : { ramMin: '1', ramMax: '2' }
+		let ram = ramDatabase ? ramDatabase : { ramMin: '2', ramMax: '4' }
 		let slider = new Slider('.memory-slider', parseFloat(ram.ramMin), parseFloat(ram.ramMax))
 
 		let minSpan = document.querySelector('.slider-touch-left span')
@@ -95,11 +95,10 @@ class Settings {
 	async initJavaPath() {
 		let javaDatabase = (await this.Database.get('1234', 'java-path'))?.value?.path
 		let javaPath = javaDatabase ? javaDatabase : 'Usar versión de Java recomendada'
-		document.querySelector('.info-path').textContent = `${dataDirectory.replace(/\\/g, '/')}/${
-			process.platform == 'darwin'
-				? this.config.dataDirectory
-				: `.${this.config.dataDirectory}`
-		}/runtime`
+		document.querySelector('.info-path').textContent = `${dataDirectory.replace(/\\/g, '/')}/${process.platform == 'darwin'
+			? this.config.dataDirectory
+			: `.${this.config.dataDirectory}`
+			}/runtime`
 
 		let path = document.querySelector('.path')
 		path.value = javaPath
@@ -279,7 +278,7 @@ class Settings {
 		}
 
 		if (!(await this.database.getAll('ram')).length) {
-			this.database.add({ uuid: '1234', ramMin: '1', ramMax: '2' }, 'ram')
+			this.database.add({ uuid: '1234', ramMin: '2', ramMax: '4' }, 'ram')
 		}
 
 		if (!(await this.database.getAll('screen')).length) {
