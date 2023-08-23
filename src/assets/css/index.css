@@ -1,4 +1,5 @@
 @import 'font.css';
+
 body {
 	background-color: #f788c0;
 	font-family: 'Delius Swash Caps';
@@ -20,6 +21,7 @@ img {
 	transform: translate(-50%);
 	transition: opacity 0.3s, top 1.5s;
 	opacity: 0;
+	z-index: 1;
 }
 
 .splash.opacity {
