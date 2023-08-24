@@ -1,39 +1,39 @@
 {
-	"name": "sakura",
-	"preductname": "Sakura Launcher",
-	"version": "1.1.5",
-	"description": "Launcher creado con 🧡 para la serie Sakura",
-	"main": "src/app.js",
-	"author": "Luuxis, lex05",
-	"url": "http://launcher.sakuralivemc.com",
-	"engines": {
-		"node": "^18.x.x"
-	},
-	"scripts": {
-		"start": "cross-env-shell NODE_ENV=dev electron .",
-		"build": "node build.js --build",
-		"icon": "node build.js --icon=https://cdn.discordapp.com/attachments/952988901658734602/1128412681100087326/icon.png",
-		"dev": "nodemon --exec npm start"
-	},
-	"license": "CC0",
-	"nodemonConfig": {
-		"ext": "js,html,css"
-	},
-	"dependencies": {
-		"electron-updater": "^6.1.1",
-		"minecraft-java-core": "^3.6.2",
-		"node-fetch": "^2.6.13"
-	},
-	"devDependencies": {
-		"cross-env": "^7.0.3",
-		"electron": "^26.0.0",
-		"electron-builder": "^24.6.3",
-		"nodemon": "^3.0.1",
-		"jimp": "^0.22.10",
-		"png2icons": "2.0.1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Dev4lexG/Sakura-Launcher.git"
-	}
+    "name": "sakura",
+    "preductname": "Sakura Launcher",
+    "version": "1.1.5",
+    "description": "Launcher creado con 🧡 para la serie Sakura",
+    "main": "src/app.js",
+    "author": "Luuxis, lex05",
+    "url": "http://launcher.sakuralivemc.com",
+    "engines": {
+        "node": "^18.x.x"
+    },
+    "scripts": {
+        "start": "cross-env-shell NODE_ENV=dev electron .",
+        "build": "node build.js --build",
+        "icon": "node build.js --icon=https://cdn.discordapp.com/attachments/952988901658734602/1128412681100087326/icon.png",
+        "dev": "nodemon --exec npm start"
+    },
+    "license": "CC0",
+    "nodemonConfig": {
+        "ext": "js,html,css"
+    },
+    "dependencies": {
+        "electron-updater": "^6.1.1",
+        "minecraft-java-core": "^3.6.2",
+        "node-fetch": "^2.6.13"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "electron": "^26.0.0",
+        "electron-builder": "^24.6.3",
+        "jimp": "^0.22.10",
+        "nodemon": "^3.0.1",
+        "png2icons": "^2.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Dev4lexG/Sakura-Launcher.git"
+    }
 }
