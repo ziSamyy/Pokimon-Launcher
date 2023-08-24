@@ -1,7 +1,7 @@
 {
 	"name": "pokimon",
 	"preductname": "Pokimon Launcher",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Zzzz",
 	"main": "src/app.js",
 	"author": "ziSamyy",
@@ -12,7 +12,7 @@
 	"scripts": {
 		"start": "cross-env-shell NODE_ENV=dev electron .",
 		"build": "node build.js --build",
-		"icon": "node build.js --icon=https://cdn.discordapp.com/attachments/1135409463961063485/1143687987306180708/picashu.png",
+		"icon": "node build.js --icon=https://media.discordapp.net/attachments/706567095118201023/1144392949870899442/Icono.png",
 		"dev": "nodemon --exec npm start"
 	},
 	"license": "CC0",
