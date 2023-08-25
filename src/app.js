@@ -31,7 +31,7 @@ if (!gotTheLock) {
 	})
 }
 
-ipcMain.on('update-window-close', () => _ /*UpdateWindow.destroyWindow()*/)
+ipcMain.on('update-window-close', () => UpdateWindow.destroyWindow())
 ipcMain.on('update-window-dev-tools', () =>
 	UpdateWindow.getWindow().webContents.openDevTools({ mode: 'detach' })
 )
