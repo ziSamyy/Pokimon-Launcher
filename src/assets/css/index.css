@@ -2,11 +2,16 @@
 
 body {
 	/* Color del fondo de la venanita de incio del Launcher*/
-	background-color: #ff0000;
+	background-color: #000;
 	font-family: 'Delius Swash Caps';
 	letter-spacing: 0px;
 	-webkit-app-region: drag;
 	user-select: none;
+}
+
+body::before {
+	content: '';
+	position: absolute;
 }
 
 img {
