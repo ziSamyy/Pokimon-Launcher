@@ -5,7 +5,7 @@
 
 'use strict'
 
-class Slider {
+export default class Slider {
 	constructor(id, minValue, maxValue) {
 		this.startX = 0
 		this.x = 0
@@ -37,18 +37,18 @@ class Slider {
 		this.setMinValue(this.minValue)
 		this.setMaxValue(this.maxValue)
 
-		this.touchLeft.addEventListener('mousedown', (event) => {
-			this.onStart(event.path[1], event)
-		})
-		this.touchRight.addEventListener('mousedown', (event) => {
-			this.onStart(event.path[1], event)
-		})
-		this.touchLeft.addEventListener('touchstart', (event) => {
-			this.onStart(event.path[1], event)
-		})
-		this.touchRight.addEventListener('touchstart', (event) => {
-			this.onStart(event.path[1], event)
-		})
+		this.touchLeft.addEventListener('mousedown', (event) =>
+			this.onStart(document.querySelector('.slider-touch-left'), event)
+		)
+		this.touchRight.addEventListener('mousedown', (event) =>
+			this.onStart(document.querySelector('.slider-touch-right'), event)
+		)
+		this.touchLeft.addEventListener('touchstart', (event) =>
+			this.onStart(document.querySelector('.slider-touch-left'), event)
+		)
+		this.touchRight.addEventListener('touchstart', (event) =>
+			this.onStart(document.querySelector('.slider-touch-right'), event)
+		)
 	}
 
 	reset() {
@@ -75,7 +75,7 @@ class Slider {
 		this.touchRight.style.left =
 			Math.ceil(
 				ratio * (this.slider.offsetWidth - (this.touchLeft.offsetWidth + this.normalizeFact)) +
-					this.normalizeFact
+				this.normalizeFact
 			) + 'px'
 		this.lineSpan.style.marginLeft = this.touchLeft.offsetLeft + 'px'
 		this.lineSpan.style.width = this.touchRight.offsetLeft - this.touchLeft.offsetLeft + 'px'
@@ -167,5 +167,3 @@ class Slider {
 		if (this.func[name]) this.func[name](...args)
 	}
 }
-
-export default Slider

@@ -1,5 +1,7 @@
 @import 'font.css';
-body { /* Color del fondo de la venanita de incio del Launcher*/
+
+body {
+	/* Color del fondo de la venanita de incio del Launcher*/
 	background-color: #ff0000;
 	font-family: 'Delius Swash Caps';
 	letter-spacing: 0px;
@@ -20,6 +22,7 @@ img {
 	transform: translate(-50%);
 	transition: opacity 0.3s, top 1.5s;
 	opacity: 0;
+	z-index: 1;
 }
 
 .splash.opacity {

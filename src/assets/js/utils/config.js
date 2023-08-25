@@ -8,7 +8,7 @@ const fetch = require('node-fetch')
 let url = pkg.user ? `${pkg.url}/${pkg.user}` : pkg.url
 
 let config = `${url}/launcher/config-launcher/config.json`
-let news = `${url}/launcher/news-launcher/GetNews.php`
+let news = `${url}/launcher/news-launcher/news.json`
 
 class Config {
 	GetConfig() {
@@ -18,6 +18,7 @@ class Config {
 					return resolve(config.json())
 				})
 				.catch((error) => {
+					document.querySelector('.preload-title').innerHTML = 'Fallo de conexión'
 					return reject(error)
 				})
 		})
