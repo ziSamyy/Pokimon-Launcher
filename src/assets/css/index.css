@@ -29,7 +29,7 @@ img {
 .splash {
 	position: absolute;
 	top: 180px;
-	left: 46%;
+	left: 50%;
 	height: auto;
 	width: 175px;
 	transform: translate(-50%);
@@ -43,7 +43,7 @@ img {
 }
 
 .splash.translate {
-	top: 50px;
+	top: 60px;
 }
 
 .splash-message {
