@@ -24,7 +24,7 @@ img {
 
 .dragbar {
 	position: fixed;
-	background: #ff2727a2;
+	background: #202020a2;
 	backdrop-filter: blur(4px);
 	top: 0px;
 	left: 0px;
