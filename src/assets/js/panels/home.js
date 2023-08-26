@@ -120,11 +120,10 @@ class Home {
 						: this.config.game_url,
 				authenticator: account,
 				timeout: 10000,
-				path: `${dataDirectory}/${
-					process.platform == 'darwin'
+				path: `${dataDirectory}/${process.platform == 'darwin'
 						? this.config.dataDirectory
 						: `.${this.config.dataDirectory}`
-				}`,
+					}`,
 				version: this.config.game_version,
 				instance: 'pokimon',
 				detached: launcherSettings.launcher.close === 'close-all' ? false : true,
@@ -265,6 +264,8 @@ class Home {
 		document.querySelector('.settings-btn').addEventListener('click', () => {
 			changePanel('settings')
 		})
+
+		document.querySelector('.player-head')
 	}
 
 	async getdate(e) {
