@@ -11,9 +11,10 @@ body {
 	margin: 0;
 	padding: 0;
 	user-select: none;
-	background: linear-gradient(#00000066, #00000066),
-		url('../images/background/pokimon.jpg') black no-repeat center center scroll;
-	background-size: 105%;
+	background: linear-gradient(#00000066, #000000cc),
+		url('../images/background/pokefamily.webp') black no-repeat center center scroll;
+	background-size: cover;
+	overflow: hidden;
 }
 
 img {
@@ -23,7 +24,7 @@ img {
 
 .dragbar {
 	position: fixed;
-	background: #ff2727a2;
+	background: #202020a2;
 	backdrop-filter: blur(4px);
 	top: 0px;
 	left: 0px;

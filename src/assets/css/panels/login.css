@@ -3,18 +3,19 @@
 	top: 52%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 25%;
-	background: #ff0c0c42;
+	background: #202020a2;
 	backdrop-filter: blur(4px);
 	padding: 20px;
 	font: normal normal bold 19px/29px 'Delius Swash Caps';
 	color: #e1e1e1;
 	border-radius: 15px;
 	text-align: center;
+	display: flex;
+	align-items: center;
 }
-.login-card-logo > img {
-	width: 75%;
-	margin-top: 5%;
+
+.login-card img {
+	width: 160px;
 	margin-bottom: 5%;
 }
 
@@ -97,14 +98,16 @@
 	border: none;
 	margin: 2% 0;
 	height: 2em;
-	background-color: #ff0000;
 	color: #121212;
+	background: #e1e1e1;
 	font: normal normal bold 19px/29px 'Delius Swash Caps';
 	cursor: pointer;
+	transition: .5s;
 }
 
 .login-btn:hover {
-	background-color: #ff0000;
+	background-color: #ff6666;
+	color: #e1e1e1;
 }
 
 .cancel {
@@ -113,13 +116,25 @@
 	color: #f1f1f1;
 	font: normal normal bold 19px/29px 'Delius Swash Caps';
 	cursor: pointer;
+	transition: .5s;
 }
 
 .cancel:hover {
-	color: #373737;
+	color: #ffc1c1;
 }
 
 .cancel:hover:disabled {
 	color: #f1f1f1;
 	cursor: default;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 5%
+}
+
+.password-reset {
+	font-size: 18px;
 }

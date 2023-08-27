@@ -12,6 +12,12 @@ body {
 body::before {
 	content: '';
 	position: absolute;
+	height: 100;
+	filter: blur(50px);
+	width: 100;
+	border-radius: 50px;
+	background-color: #9b3030;
+	box-shadow: 278px 50px #e37d56, 63px 338px #6c1313;
 }
 
 img {
@@ -24,6 +30,8 @@ img {
 	position: absolute;
 	top: 180px;
 	left: 50%;
+	height: auto;
+	width: 175px;
 	transform: translate(-50%);
 	transition: opacity 0.3s, top 1.5s;
 	opacity: 0;
@@ -35,7 +43,7 @@ img {
 }
 
 .splash.translate {
-	top: 100px;
+	top: 60px;
 }
 
 .splash-message {
